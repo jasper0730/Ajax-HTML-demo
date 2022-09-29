@@ -1,0 +1,80 @@
+.wrap
+  width: 100%
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+.btn
+  width: 200px
+  height: 200px
+  border-radius: 500px
+  background-color: #fa0
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  font-size: 36px
+  font-weight: 700
+
+.modal
+  max-width: 500px
+  width: 100%
+  background-color: #000
+  position: fixed
+  top: 20px
+  left: 50%
+  display: flex
+  align-items: center
+  text-align: center
+  justify-content: center
+  display: none
+  transform: translateX(-50%)
+  padding: 20px
+  opacity: 0
+  transition: opacity .6s
+  &.active
+    display: block
+  &.show
+    opacity: 1
+  & p
+    color: #fff
+    font-weight: 500
+    font-size: 36px
+  & .txt
+    margin-top: 30px
+    color: #fff
+
+.swiper
+  width: 1200px
+  height: 100%
+
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  background: #fff
+
+  /* Center slide text vertically */
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+
+.swiper-slide img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.swiper-slide
+  width: 20%
+
+.swiper-slide-active
+  width: 40%
